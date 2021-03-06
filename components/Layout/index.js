@@ -4,8 +4,14 @@ const Layout = (props) => {
   const control = false;
 
   return (
-    <div>
-      {props.children}
+    <div className="container">
+      <header>HEADER</header>
+      <div className="content">
+        <main>{props.children}</main>
+        <aside className="left-sidebar">LEFT SIDEBAR</aside>
+        <aside className="right-sidebar">RIGHT SIDEBAR</aside>
+      </div>
+      <footer>FOOTER</footer>
     </div>
   )
 }

@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <div>
       <Layout>
-        <div style={{background: 'red'}}>
+        <div>
           Spotify App Home
         </div>
-        <div style={{background: 'green'}}>
+        <div>
           Spotify App Home
         </div>
       </Layout>

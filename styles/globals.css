@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* COLORS and FONTS */
+body {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 3;
+}
