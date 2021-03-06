@@ -1,5 +1,10 @@
 import React from 'react';
 
+import LeftSidebar from '../LeftSidebar/index'
+import RightSidebar from '../RightSidebar/index'
+import Header from '../Header/index'
+import Footer from '../Footer/index'
+
 const Layout = (props) => {
   const control = false;
 
@@ -7,15 +12,15 @@ const Layout = (props) => {
     <div className="container">
       <div className="content">
         <main>
-          <header>HEADER</header>
+          <Header/>
           <div>
             {props.children}
           </div>  
         </main>
-        <aside className="left-sidebar">LEFT SIDEBAR</aside>
-        <aside className="right-sidebar">RIGHT SIDEBAR</aside>
+        <LeftSidebar/>
+        <RightSidebar/>
       </div>
-      <footer>FOOTER</footer>
+      <Footer/>
     </div>
   )
 }
