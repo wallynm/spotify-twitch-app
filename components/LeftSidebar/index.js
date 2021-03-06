@@ -1,10 +1,13 @@
 import React from 'react';
 import ListItems from '../ListItems/index';
+import Navigation from '../Navigation/index';
 
 const LeftSidebar = () => {
 
   return (
     <aside className="left-sidebar">
+      <Navigation/>
+
       <ListItems bold title="Sua biblioteca">
         <div>Feito para você</div>
         <div>Tocados recentemente</div>
