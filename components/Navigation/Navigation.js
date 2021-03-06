@@ -1,12 +1,12 @@
 import React from 'react';
 import Navigationitem from './NavigationItem';
 
-const Navigation = (props) => {
+const Navigation = () => {
     return (
-    <div>
-      <Navigationitem icon="" title=""/>
-      <Navigationitem icon="" title="" />
-      <Navigationitem icon="" title="" />
+    <div className="navigation">
+      <Navigationitem icon="home" title="Home"/>
+      <Navigationitem icon="sound" title="Star" />
+      <Navigationitem icon="star" title="Sound" />
     </div>
   )
 }

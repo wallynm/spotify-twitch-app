@@ -1,10 +1,15 @@
 import React from 'react';
-import Icons from "react-icons/ai";
+import { AiFillHome, AiFillSound, AiFillStar } from "react-icons/ai";
+
+const Icons = {
+  home: AiFillHome,
+  sound: AiFillSound,
+  star: AiFillStar
+}
 
 
 const NavigationItem = (props) => {
-  
-  const Icon = Icons[props.icon]
+  let Icon = Icons[props.icon]
 
   return (
     <div className="navigation-item">
