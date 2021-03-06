@@ -1,14 +1,22 @@
 import React from 'react';
 import Navigationitem from './NavigationItem';
+import { useRouter } from 'next/router'
+
 
 const Navigation = () => {
-    return (
+  const router = useRouter()
+
+  const currentPathSelected = (item) => {
+    return router.pathname === item
+  }
+
+  return (
     <div className="navigation">
-      <Navigationitem icon="home" title="Home"/>
-      <Navigationitem icon="sound" title="Star" />
-      <Navigationitem icon="star" title="Sound" />
+      <Navigationitem title="Início" selected={currentPathSelected('/home')} icon="home"/>
+      <Navigationitem title="Navegar" selected={currentPathSelected('/navigate')} icon="star" />
+      <Navigationitem title="Rádio" selected={currentPathSelected('/radio')} icon="sound" />
     </div>
   )
 }
 
-export default Navigation;
+export default Navigation

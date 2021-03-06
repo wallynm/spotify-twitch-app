@@ -9,12 +9,23 @@ const Icons = {
 
 
 const NavigationItem = (props) => {
-  let Icon = Icons[props.icon]
+  let navigationItemClass = 'navigation-item'
+  let Icon = () => null;
+
+  if (Icons[props.icon]) {
+    Icon = Icons[props.icon]
+  }
+
+  if (props.selected) {
+    navigationItemClass += ' selected';
+  }
 
   return (
-    <div className="navigation-item">
+    <div className={navigationItemClass}>
       <Icon/>
-      {props.title}
+      <div className="title">
+        {props.title}
+      </div>
     </div>
   )
 }

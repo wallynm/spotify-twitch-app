@@ -1,3 +1,24 @@
 .navigation {
-  margin: 20px;
+  margin: 20px 0;
+}
+
+.navigation svg {
+  font-size: 28px;
+}
+
+.navigation-item {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  border-left: 3px solid transparent;
+}
+
+.navigation-item.selected {
+  border-left: 3px solid #57B560;
+}
+
+.navigation-item .title {
+  margin: 5px;
+  margin-left: 15px;
+  font-size: 14px;
 }
