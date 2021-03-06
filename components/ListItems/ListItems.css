@@ -1,0 +1,12 @@
+.listitems {
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.listitems h3 {
+  text-transform: uppercase;
+}
+
+.listitems .listitems-content > div {
+  margin: 10px 0px;
+}
