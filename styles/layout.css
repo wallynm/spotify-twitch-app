@@ -30,7 +30,7 @@ footer {
   main {
       flex: 2;
       order: 2;
-      min-height: 80vh;
+      min-height: 90.6vh;
   }
   .left-sidebar {
       order: 1;

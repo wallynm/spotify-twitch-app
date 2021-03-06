@@ -5,9 +5,13 @@ const Layout = (props) => {
 
   return (
     <div className="container">
-      <header>HEADER</header>
       <div className="content">
-        <main>{props.children}</main>
+        <main>
+          <header>HEADER</header>
+          <div>
+            {props.children}
+          </div>  
+        </main>
         <aside className="left-sidebar">LEFT SIDEBAR</aside>
         <aside className="right-sidebar">RIGHT SIDEBAR</aside>
       </div>
