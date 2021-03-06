@@ -1,0 +1,11 @@
+
+.left-sidebar {
+  background: dodgerblue;
+}
+
+@media all and (min-width: 768px) {
+  .left-sidebar {
+      order: 1;
+      flex: 1;
+  }
+}

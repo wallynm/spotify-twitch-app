@@ -1,0 +1,11 @@
+.right-sidebar {
+  background: forestgreen;
+}
+
+
+@media all and (min-width: 768px) {
+  .right-sidebar {
+      flex: 1;
+      order: 3;
+  }
+}
