@@ -5,7 +5,7 @@ const LeftSidebar = () => {
 
   return (
     <aside className="left-sidebar">
-      <ListItems title="Sua biblioteca">
+      <ListItems bold title="Sua biblioteca">
         <div>Feito para você</div>
         <div>Tocados recentemente</div>
         <div>Músicas curtidas</div>
