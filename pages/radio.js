@@ -4,11 +4,11 @@ import Layout from '../components/Layout/index'
 const Home = () => {
 
   return (
-    <Layout>
-      <div>
-        Home
-      </div>
-    </Layout>
+      <Layout>
+        <div>
+          Radio
+        </div>
+      </Layout>
   )
 }
 

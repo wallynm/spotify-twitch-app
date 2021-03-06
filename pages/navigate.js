@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <Layout>
       <div>
-        Home
+        Radio
       </div>
     </Layout>
   )

@@ -1,5 +1,7 @@
 import React from 'react';
 import { AiFillHome, AiFillSound, AiFillStar } from "react-icons/ai";
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Icons = {
   home: AiFillHome,
@@ -7,8 +9,12 @@ const Icons = {
   star: AiFillStar
 }
 
-
 const NavigationItem = (props) => {
+  const router = useRouter()
+  const currentPathSelected = () => {
+    return router.pathname === props.path
+  }
+
   let navigationItemClass = 'navigation-item'
   let Icon = () => null;
 
@@ -16,17 +22,19 @@ const NavigationItem = (props) => {
     Icon = Icons[props.icon]
   }
 
-  if (props.selected) {
+  if (currentPathSelected()) {
     navigationItemClass += ' selected';
   }
 
   return (
-    <div className={navigationItemClass}>
-      <Icon/>
-      <div className="title">
-        {props.title}
+    <Link href={props.path}>
+      <div className={navigationItemClass}>
+        <Icon/>
+        <div className="title">
+          {props.title}
+        </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
